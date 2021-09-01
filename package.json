@@ -1,0 +1,27 @@
+{
+  "name": "ui5-task-tile_cp_preload",
+  "version": "0.0.1",
+  "description": "Copy the preload file during build to subdir for custom tiles",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uxkjaer/ui5-task-tile_cp_preload.git"
+  },
+  "keywords": [
+    "ui5",
+    "tooling",
+    "custom",
+    "task",
+    "custom",
+    "tile"
+  ],
+  "author": "Jakob Kjaer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uxkjaer/ui5-task-tile_cp_preload/issues"
+  },
+  "homepage": "https://github.com/uxkjaer/ui5-task-tile_cp_preload#readme"
+}
