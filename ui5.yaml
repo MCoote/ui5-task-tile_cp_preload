@@ -1,0 +1,7 @@
+specVersion: '2.2'
+metadata:
+  name: ui5-task-tile_cp_preload
+kind: extension
+type: task
+task:
+  path: src/index.js

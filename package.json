@@ -1,6 +1,6 @@
 {
   "name": "ui5-task-tile_cp_preload",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Copy the preload file during build to subdir for custom tiles",
   "main": "src/index.js",
   "scripts": {
