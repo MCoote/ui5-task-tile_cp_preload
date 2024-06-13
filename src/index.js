@@ -1,6 +1,9 @@
-const log = require("@ui5/logger").getLogger(
-    "builder:customtask:ui5-task-flatten-library"
-  );
+const pLog = import("@ui5/logger").then( function (oLogger) {
+  return oLogger.getLogger(
+      "builder:customtask:ui5-task-flatten-library"
+    );
+  }
+);
  
   module.exports = async function ({ workspace, options }) {
     // "workspace" is a DuplexCollection that represents the projects source directory (e.g. /webapp)
@@ -9,6 +12,7 @@ const log = require("@ui5/logger").getLogger(
     // The uglify task intents to only process those resources present in the project source directory
     //  therefore it calls the API "byGlobSource".
 
+    const log = await pLog;
     const resources = await workspace.byGlob("**/Component*.js")
     const preload = await workspace.byPath(`/resources/${options.configuration.path}/Component-preload.js`) // Collect all resources that shall be uglified. The caller provides the necessary GLOB pattern.
     log.info(`Found ${preload.getPath()}`)
